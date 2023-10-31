@@ -6,58 +6,57 @@ const fs = require("fs");
 
 // TODO: Create an array of questions for user input
 const questions = [
-    // Title
+    // Title done
     {
         type:"input",
-        message:"what do title?",
+        message:"Enter the title for your README",
         name:"title"
     },
-    //Description
+    //Description done
     {
         type:"input",
-        message:"what do description?",
+        message:"Enter a concise description for your project",
         name:"description"
     }, 
-    //Table of Contents
+    //Installation done
     {
         type:"input",
-        message:"what do contents",
-        name:"contents"
-    }, 
-    //Installation
-    {
-        type:"input",
-        message:"what do installation",
+        message:"Enter any prevalent installation information",
         name:"installation"
     }, 
-    // Usage
+    // Usage done
     {
         type:"input",
-        message:"what do usage",
+        message:"Enter any comments regarding project usage",
         name:"usage"
     }, 
-    // Credits
+    // Credits done
     {
         type:"input",
-        message:"what do credits",
+        message:"Enter contributor information for the credits section",
         name:"credits"
     }, 
-    // License
+    // License !!!!
     {
-        type:"input",
-        message:"what do license",
-        name:"license"
+        type:"list",
+        message:"what license will this project operate under?",
+        name:"license",
+        choices: [
+            "MIT",
+            "Apache",
+            "Hippocratic"
+        ]
     }, 
-    // tests
+    // tests done
     {
         type:"input",
-        message:"what do tests",
+        message:"Enter any information regarding tests section",
         name:"tests"
     },
-    // questions
+    // questions done 
     {
         type:"input",
-        message:"what do questions",
+        message:"Enter any information regarding the questions section",
         name:"questions"
     },
 
